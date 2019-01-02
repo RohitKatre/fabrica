@@ -1,0 +1,73 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block static %}
+    <link href="{% static 'css/style_latest.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body%}
+    <section class="hero-section-other static-bg" id="top" style="background-image:url({% static 'img/head_banner/Certifications.jpg' %}); ">
+        </section>
+
+       <div class="ats-about-us">
+            <div class="container">
+                <section class="about-us-left">
+                    <header>
+                        <h2 class="section-title-left">OUR CERTIFICATIONS</h2>
+                    </header>
+                    <p>
+                        We have always aspired for the best quality products through evolving with time and trends of the industry. Our state-of-the-art technology and tested processes ensure better output thereby confirming to the standards of the trade. Here are a few appreciations and certifications ensuring our strong presence in the organizational ecosystem.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="ats-organization section-padding">
+            <div class="container no-padding">
+                <div class="certificate">
+                    {% for object in object_list %}
+                        <div class="col-sm-6 col-xs-12 text-center background-white certificate-container">
+                            <a href="" data-toggle="modal" data-target="#{{ object.title|cut:'' }}">
+                                <img class="img-responsive" src="{{ object.img_thumnail.url }}" alt=""/>
+                                <h4>{{object.title}}</h4>
+                                <p>{{object.description}}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <div class="popup">
+            {% for object in object_list %}
+                <div class="modal fade" id="{{ object.title|cut:'' }}" tabindex="-1" role="dialog" aria-labelledby="{{ object.title|cut:'' }}">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 style="float:left;">{{object.title}}</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                {% if object.extension in pdf_format %}
+                                    <embed src="{{ object.file.url }}" width="600" height="500"
+                                           alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                                {% elif object.extension in img_format  %}
+                                    <img class="img-responsive" src="{{ object.file.url }}" alt="{{object.title}}"/>
+                                {% endif %}
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+
+{% endblock %}
+
+
+{% block js %}
+
+{% endblock %}
