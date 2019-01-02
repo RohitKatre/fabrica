@@ -1,0 +1,136 @@
+/*about us page tab to accordion*/
+
+@media(min-width:768px){
+    .accordion-wrapper{
+        padding: 0 1.5em;
+    }
+}
+.tabs-container__panel {
+  background: #fff;
+  
+}
+.tabs-container__panel:focus {
+    outline: thin dotted;
+    outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+    .tabs-nav-init .tabs-container__title,
+    .tabs-nav-init .tabs-container__panel {
+        display:none;
+    }
+
+    .tabs-container__panel[aria-hidden="false"] {
+        display:block
+    }
+
+    .tabs-navigation {
+        width: auto;
+        overflow:hidden;
+        position:relative;
+        z-index:10;
+        box-shadow:inset 0 -1px #dddddd;
+        padding-left: 20px;
+    }
+
+    .tabs-navigation li {
+        display:table-cell;
+        vertical-align:top;
+        -webkit-box-shadow:inset 1px 0 #dddddd;
+        -moz-box-shadow:inset 1px 0 #dddddd;
+        box-shadow:inset 1px 0 #dddddd;
+    }
+
+    .tabs-navigation__button {
+        position:relative;
+        display: inline-block;
+        color: #fff;
+        text-decoration:none;
+        cursor:default;
+        line-height:1;
+        font-size:1em;
+        padding:1em;
+        border: none;
+        background: #ff5959;
+        margin: 0;
+        
+    }
+
+    .tabs-navigation__button:hover {
+      color: #2B2B2B;
+    }
+
+    .tabs-navigation__button[aria-selected="true"] {
+        color: #000;
+        background: #fff;
+        z-index: 10;
+        border:1px solid #dddddd;
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs-navigation, .tabs-init .tabs-container__panel, .tabs-init .accordion--closed .tabs-container__panel {
+        display:none
+    }
+
+    .tabs-init {
+        border-top:solid 1px #dddddd;
+        
+    }
+
+    .tabs-init .tabs-container__title {
+        padding:0.2em 1.5em;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .accordion--closed .tabs-container__title,
+    .tabs-init .tabs-container__title {
+        background: #ff5959;
+        border-bottom: solid 1px #a1a1a1;
+        color:#fff;
+        margin-bottom: 10px;
+    }
+
+    .tabs-container__panel[aria-hidden="false"] {
+        display:block;
+        border-bottom: solid 1px #a1a1a1;
+    }
+
+    .tabs-container__title[aria-selected="true"] {
+        background:#ddd;
+        color:#6a6a6a;
+        
+        border-bottom:solid 1px #dddddd;
+    }
+
+    .tabs-container__panel.accordion--closed {
+        border-bottom:none;
+    }
+}
+
+/*============================================================================
+  Demo Styles
+==============================================================================*/
+
+h1 {
+  line-height: 1;
+  margin: 0 0 20px;
+}
+.sub-title {
+  font-size: 20px;
+}
+
+.desc {
+  margin-bottom: 20px;
+}
+
+/*================ Responsive Typography ================*/
+@media (min-width: 768px) and (max-width: 1000px) {
+    .tabs-navigation__button {
+        font-size:1em;
+        padding:1.25em 0.9375em
+    }
+}

@@ -1,0 +1,521 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+
+{% block body%}
+<div class="hero-section static-bg" id="top">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class='img-responsive' src="{% static 'img/banner/01.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <h1>Wide Rrange Of <br> Durable Poles
+                        <!--<small>dolor sit amet</small>-->
+                    </h1>
+                </div>
+            </div>
+            <div class="item">
+                <img class='img-responsive' src="{% static 'img/banner/02.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <h1>Quality Poles For A<br> Lasting Presence
+                        <!--<small>dolor sit amet</small>-->
+                    </h1>
+                </div>
+            </div>
+
+            <div class='item'>
+                <img class='img-responsive' src="{% static 'img/banner/03.jpg' %}" alt=""/>
+                <div class="carousel-caption">
+                    <h1>ISO Certified<br> Safety & Assurance
+                        <!--<small>dolor sit amet</small>-->
+                    </h1>
+                </div>
+            </div>
+            <!--<div class='item'>-->
+            <!--<img class='img-responsive' src="{% static 'img/banner/2.jpg' %}" alt=""/>-->
+            <!--<div class="carousel-caption">-->
+            <!--<h1>Lorem ipsum<br>-->
+            <!--<small>dolor sit amet</small>-->
+            <!--</h1>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+
+<section class="about-us" id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 no-padding">
+                <!-- About Us Left -->
+                <div class="about-us-left">
+                    <!-- About Us Info -->
+                    <h2 class="section-title-left">About Us</h2>
+                    <p>
+                        We are one of the leading pole manufacturing organizations in Nagpur, India. We are an ISO
+                        9001:2015 certified company for Quality Management System. Our experience in the line of Pole
+                        Production for many years gave us a variety of clients from organizations of various domains
+                        around the country. Our clientele is always satisfied with the quality we deliver which in turn
+                        brings us more business and the excitement to keep working for the industry for the long run.
+                        satisfied with the quality we deliver which in turn brings us more business and the excitement
+                        to keep working for the industry for the long run.
+                        <!--                                We are also work in industrial fabrication such as industrial shed parts, industrial job work, solar
+                                                        structure according to specification drawing provided by customer.-->
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 no-padding">
+                <!-- About Us Right -->
+                <div class="about-us-right">
+                    <!-- Our Features -->
+                    <div class="media">
+                        <div class="media-left dotted">
+                            <i class="fa fa-life-ring"></i>
+                        </div>
+                        <div class="media-body">
+                            <!-- About Right Title -->
+                            <h3 class="media-heading">Certified Quality</h3>
+                            <p>Get assurance of ISO Certification</p>
+                        </div>
+                    </div>
+                    <!-- Our Features -->
+                    <div class="media">
+                        <div class="media-left dotted">
+                            <i class="fa fa-code-fork"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Consistent Support</h3>
+                            <p>Timely support for excellent service</p>
+                        </div>
+                    </div>
+                    <!-- Our Features -->
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Durable & Safe</h3>
+                            <p>Stay assured of durable materials</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section section-padding" id="testimonial">
+    <div class="container">
+        <div class="row">
+            <!--Our service Section Title-->
+            <h3 class="section-title-new text-center">Products</h3>
+            <!--Our service  Section Subtitle-->
+
+
+            <div class="row our-services">
+
+                <!--Single Service-->
+                <div class="col-md-6 col-lg-5 col-sm-12 col-lg-offset-1 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-eye"></i>-->
+                            <img src="{% static 'img/icon/icon-1.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <!--Single service title-->
+                            <h3 class="media-heading">SWAGED TUBULAR POLE</h3>
+                            <p>Manufactured from complete range of 410SP-1 to 410SP-80 (7 m to 16 m) according to
+                                standard
+                                specifications and customer requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Single Service-->
+                <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa glyphicon glyphicon-fire"></i>-->
+                            <img src="{% static 'img/icon/icon-2.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">PIPE POLES</h3>
+                            <p> Our manufacturing range starts from 3m to 9 m and can be manufactured according to
+                                customer
+                                requirements. These poles are generally used for street lighting in township, commercial
+                                complexes,
+                                roads etc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Single Service-->
+                <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12 col-lg-offset-1 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-fire-extinguisher" aria-hidden="true"></i>-->
+                            <img src="{% static 'img/icon/icon-8.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">CAMERA POLES</h3>
+                            <p>Can be manufactured as per customer to technological requirement and are used for fixing
+                                all types of
+                                electrical to electronic devices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Single Service-->
+                <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-building"></i>-->
+                            <img src="{% static 'img/icon/icon-4.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">SMART POLES</h3>
+                            <p>
+                                It can be manufactured &amp; designed as per customer &amp; technical requirement and
+                                are used for fixing all
+                                types of electrical &amp; electronics devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 col-sm-12 col-lg-offset-1 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-building"></i>-->
+                            <img src="{% static 'img/icon/icon-5.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">DISTRIBUTION POLES</h3>
+                            <p>Manufactured as per customer requirement &amp; used for distribution of electricity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-building"></i>-->
+                            <img src="{% static 'img/icon/icon-6.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">SOLAR STREET POLES</h3>
+                            <p>Manufactured from range of 4.5 m to 13 m as per customer requirement for various solar
+                                light &amp; panels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-sm-12 col-lg-offset-1 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-building"></i>-->
+                            <img src="{% static 'img/icon/icon-7.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">INDUSTRIAL FABRICATION</h3>
+                            <p>We are also work in industrial fabrication such as industrial shed parts, industrial job
+                                work, and solar
+                                structure according to specification drawing provided by customer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12 single-service">
+                    <div class="media">
+                        <div class="media-left">
+                            <!--<i class="fa fa-building"></i>-->
+                            <img src="{% static 'img/icon/icon-3.png' %}" alt=""/>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">DECORATIVE BRACKETS</h3>
+                            <p>We also manufacture all types of decorative brackets (galvanized or on galvanized) as per
+                                customer
+                                requirement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us" id="material">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 no-padding">
+                <!-- About Us Left -->
+                <div class="about-us-left">
+                    <!-- About Us Info -->
+                    <h2 class="section-title-left">MANUFACTURING PROCESS</h2>
+                    <!--<p> With about two decades of experience in providing Industrial Security Services initiated by a board of directors composed of Ex-servicemen and retired police officers our business practices are absolutely transparent as we strictly adhere to statutory obligations and Government norms. We got a distinct command in selection, training and deployment of manpower. In principal, we provide a mix of outsiders and locals in equal ratio. Our derived training concepts, practices and principles make sure effective and efficient execution of security manpower and services.</p>-->
+                    <ul class="list-unstyled">
+                        <li>MS Sheet Cut to Length</li>
+                        <li>Trapezoidal Cutting for octagonal or polygonal poles</li>
+                        <li>Press Brake Bending</li>
+                        <li>Longitudinal Welding Grinding</li>
+                        <li>Base plate &amp; door cutting &amp; fitting</li>
+                        <li>Galvanization</li>
+                        <li>Straitening &amp; Final Finishing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 no-padding">
+                <!-- About Us Right -->
+                <div class="about-us-right">
+                    <div class="media">
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> High Mast Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Octagonal Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Steel Tubular Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Pipe Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Camera Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Smart Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Solar Poles</h4>
+                        </div>
+                        <div>
+                            <h4><i class="fa fa-angle-right"></i> Distribution Poles</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section section-padding" id="gallery">
+    <div class="container">
+        <div class="row">
+            <!-- Our service Section Title -->
+            <h3 class="section-title-new text-center">Gallery</h3>
+            <!-- Our service  Section Subtitle -->
+
+            <div class="row our-services">
+
+                <!-- Single Service -->
+                <div class="col-sm-12 col-xs-12">
+                    <div class="media">
+                        <div class="owl-carousel owl-theme">
+                            {% if gallery_imgs %}
+                            {% for img in gallery_imgs %}
+                            <div class="item">
+                                <img src="{{ img.image_thubnail.url }}" alt=""/>
+                            </div>
+                            {% endfor %}
+                            {% for img in g_img_count %}
+                            <div class="item">
+                                <img src="{% static 'img/gallery/1.jpg' %}" alt=""/>
+                            </div>
+                            {% endfor %}
+                            {% else %}
+                            {% for img in g_img_count %}
+                            <div class="item">
+                                <img src="{% static 'img/gallery/1.jpg' %}" alt=""/>
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-partners-section protfolio-section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class='col-md-12'>
+                <div class="carousel slide media-carousel" id="media">
+                    <div class="carousel-inner">
+                        <div class="item  active">
+                            <div class="row">
+                                {% if clients %}
+                                {% for client in clients %}
+
+                                <div class="col-md-4">
+                                    <a class="thumbnail"><img alt="" src="{{ client.image.url }}"></a>
+                                    <h4 class="text-center">{{client.name}}</h4>
+                                </div>
+                                {% if forloop.counter|divisibleby:3 %}
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                {% endif %}
+                                {% endfor %}
+                                {% else %}
+                                <div class="col-md-4">
+                                    <a class="thumbnail"><img alt="" src="{% static 'img/gallery/1.jpg' %}"></a>
+                                    <h4 class="text-center">Default</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="thumbnail"><img alt="" src="{% static 'img/gallery/1.jpg' %}"></a>
+                                    <h4 class="text-center">Default</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="thumbnail"><img alt="" src="{% static 'img/gallery/1.jpg' %}"></a>
+                                    <h4 class="text-center">Default</h4>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+                    <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-us-section section-padding" id="contact">
+    <div class="container">
+        <!-- Contact Us Section Title -->
+        <h2 class="section-title contact-title text-center">Contact Us</h2>
+        <p class="sub-title contact-subtitle text-center">Head Office:
+            Plot No. 04, Block No. 1, Railway Karmachari Gruh Nirman Society, Omkar Nagar, Nagpur-27.<br>
+            Phone: +9130199796
+        </p>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                <div class="contact-form-section mt-50">
+                    <div class="row" id="model_pop">
+
+                    </div>
+                    <form method="POST" action="{% url 'main:email' %}" id="contactForm" name="contact-form"
+                          role="form">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-sm-5 col-md-4">
+                                <!-- Name Field -->
+                                <div class="form-group contact-form-icon">
+                                    <label class="sr-only">Name</label>
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" placeholder="Name" id="name" class="form-control" name="name"
+                                           required>
+                                </div>
+                                <!-- Email Field -->
+                                <div class="form-group contact-form-icon">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="email" placeholder="Email" id="email" class="form-control" name="email"
+                                           required>
+                                </div>
+                                <!-- Subject Field -->
+                                <div class="form-group contact-form-icon">
+                                    <label for="subject" class="sr-only">Subject</label>
+                                    <i class="fa fa-pencil"></i>
+                                    <input type="text" placeholder="Subject" id="subject" class="form-control"
+                                           name="subject" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 col-md-8">
+                                <div class="form-group contact-form-icon">
+                                    <label for="message" class="sr-only">Message</label>
+                                    <i class="fa fa-keyboard-o"></i>
+                                    <textarea placeholder="Message" rows="7" id="message" class="form-control"
+                                              name="message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-md-4 text-center contact-button-padding">
+                                <button class="btn-primary btn-contact btn-block" name="submit" type="submit"><i
+                                        class="fa fa-paper-plane"></i> Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+
+
+</script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+        $(document).ready(function() {
+        $('#contactForm').submit(function() {
+            $.ajax({
+                data: $(this).serialize(), // get the form data
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function(response) { // on success..
+                    <!--$('#model_pop').html("Mail Send"); // update the DIV-->
+                    alert(response["message"]);
+                    $('#name').val('');
+                    $('#email').val('');
+                    $('#message').val('');
+                    $('#subjet').val('');
+                }
+            });
+            return false;
+        });
+    });
+
+
+</script>
+{% endblock %}

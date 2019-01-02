@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Dec, 2018, 11:58:20 PM
+    Author     : rohit
+*/
+
+#material .about-us-right ul li{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 7px;
+}
+#material .about-us-right ul li h4{
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+#material .about-us-right .media .fa:before {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    min-height: 20px;
+    padding:2px;
+    line-height: 20px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    min-width: 20px;
+}
+
+#material .about-us-right .media .fa:before:hover{
+
+}
+
+.certificate{
+    display: inline-block;
+    padding: 30px;
+    background-color: #ccc;
+}
+@media(min-width:768px){
+    .certificate-container{
+        padding: 20px;
+
+    }
+    .certificate-container h4{
+        padding: 20px;
+        border-bottom: 2px solid #ccc;
+    }
+}
+.owl-nav{
+    /*    position: absolute;
+        top:50%;
+        width: 100%;*/
+    text-align: center;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px;
+    /*    border: 1px solid #fff;*/
+    /*padding: 10px;*/
+
+    /*float: left;*/
+}
+.owl-carousel .owl-nav button.owl-next{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px;
+    /*border: 1px solid #fff;*/
+    /*float: right;*/
+}
+.owl-prev span, .owl-next span{
+    color: #fff;
+}
+#TabContainer .panel-default>.panel-heading{
+    color: #fff;
+    background-color: #114c4c;
+    border-color: #114c4c;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+    border-color: #114c4c;
+}
+
+
+@media(min-width:768px){
+    .carousel-caption{
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(17,76,76,0.8)
+    }
+    .carousel-caption h1{
+        /*padding-top: 15%;*/
+        padding-top: 10%;
+        color: #fff;
+    }   
+}
+.carousel-caption h1{
+    color:#fff;
+}
+.carousel-caption{
+    background-color: rgba(17,76,76,0.8)
+}
+
+@media(min-width:768px){
+    #material .about-us-right .media{
+        /*margin-bottom: 40px;*/
+        
+    }
+
+    #material .about-us-right .media div{
+        padding: 5px;
+    }
+}
+
+ #material .about-us-right .media h4{
+        color: #fff;
+    }
+#material_specification{
+    padding:0 0 40px 0;
+}
+#decorative_bracket{
+    padding:0 0 40px 0;
+}
+
+#industrial_fabric{
+    padding:0 0 40px 0;
+}
+
+@media(max-width:767px){
+    #logo-img img{
+           display:block;
+           height:50px;
+    }
+    .logo{
+            padding-top:5px;
+    }
+    .carousel-caption{
+        position:initial;
+        min-height:150px;
+    }
+    .carousel-caption h1{
+        font-size:25px;
+        line-height:30px;
+    }
+    #sub_menu{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .ats-organization{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .certificate-container{
+        margin-bottom:15px;
+    }
+}
